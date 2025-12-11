@@ -1,7 +1,7 @@
 import cron from "node-cron";
-import { OrderModels } from "../models/orders.models.js";
-import UserSummaryModels from "../models/summaryUser.models.js";
-import RevenueSummaryModels from "../models/summaryRevenuse.js";
+import { OrderModels } from "../modules/orders.module.js";
+import UserSummaryModels from "../modules/userSummary.module.js";
+import RevenueSummaryModels from "../modules/revenueSummary.module.js";
 
 
 const salesSummaryCron = cron.schedule("0 31 13 * * *", async () => {
